@@ -35,7 +35,7 @@
 /* Informações de contato */
 .email,
 .phone {
-    font-family: 'KoPub Batang';
+    font-family: 'Roboto', sans-serif;;
     font-style: normal;
     font-weight: 400;
     font-size: 0.9em;
@@ -530,7 +530,7 @@ nav ul li {
 
 
 .containerOferta {
-    margin-top: 2880px;
+    margin-top: 2960px;
     text-align: center; /* Centraliza o conteúdo horizontalmente */
     margin-bottom: 80px;
 }
