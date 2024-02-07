@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    background: #FF6900;
+}
+
+/* Ícones de contato */
+.header-info img {
+    height: 23px;
+    margin: 0 5px;
+}
+.redesocial {
+    margin-right: 80px;
+    display: flex;
+}
+.contact{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.redesocial img {
+    margin-left: 20px; 
+}
+/* Informações de contato */
+.email,
+.phone {
+    font-family: 'KoPub Batang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004E9A;
+    padding: 10px 20px;
+    color: #FFFFFF;
+}
+
+.logoImg {
+    width: 100px; 
+    height: 50px; 
+}
+
+.logo {
+    position: absolute;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-left: 90px;
+    margin-top: 15px;
+    color: #FF6900; 
+}
+
+.menu-hidden {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 100px;
+    display: flex;
+
+}
+
+.menu-item {
+    margin-left: 20px; 
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    transition: color 0.3s ease; 
+}
+
+.menu-item a:hover {
+    color: #FF6900; 
+}
+
+
+
+
+
+/* Main */
+
+
+.main img{
+    width: 100%;
+    height: 45vh;
+}
+
+.main h3{
+    padding: 20px;
+    position: absolute;
+    height: 99px;
+    font-family: 'Righteous';
+    font-weight: 900;
+    font-size: 2.2em;
+    line-height: 50px;
+    text-align: center;
+
+   
+}
+
+.main span{
+    color: #FF6900;
+}
+
+/* Sobre */
+.containerSobre {
+    display: flex;
+    margin-bottom: 20px;
+    width: 60px;
+}
+
+
+.contentSobre{
+    position: absolute;
+    margin-top: 200px;
+    background-color: #004E9A ;
+    width: 50%;
+    height: 550px;
+    overflow: hidden;
+    padding: 80px 30px;
+    /* Rectangle 1 */
+
+
+
+}
+
+.contentSobre h1{
+    font-family: 'Moul';
+    font-weight: 1000;
+    margin-top: -30px;
+    font-size: 4em;
+    text-align: center;
+    line-height: 99px;
+
+    /* CorParaOTexto */
+    color: #FF6900;
+    border-bottom: 1px solid #FF6900;
+}
+.contentSobre h3{
+     padding-top: 30px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.8em;
+    line-height: 35px;
+
+    color: #FFFFFF;
+
+
+}
+
+.sobreImg{
+    margin-top: 200px;
+    position: absolute;
+    right: 0px;
+    width:50%;
+    height: 550px;
+}
+.containerSobre span{
+    color: #FF6900;
+}
+
+
+
+/* Serviços */
+
+
+.services {
+    position: absolute;
+    margin-top: 1200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.services h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 5em;
+    font-family: 'Moul';
+    font-weight: 1000;
+    color: #FF6900;
+}
+
+.servicesItems {
+    list-style: none;
+    padding: 0;
+    margin: 60px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesItems li {
+    margin: 0 10px;
+}
+
+.servicesItems img {
+    width: 22vw;
+}
+
+.servicesItems li:hover img {
+    filter: brightness(70%);
+}
+
+.servicesItems li {
+    position: relative;
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.servicesItems h6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease;
+    color: white; /* Cor do texto */
+    text-align: center;
+    /* Description */
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 30px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    opacity: 0; /* Inicialmente oculto */
+}
+
+.servicesItems li:hover h6 {
+    opacity: 1; 
+    z-index: 2;
+
+}
+
+.servicesItems img {
+    display: block;
+    height: auto; /* Para manter a proporção */
+}
+
+
+
+
+/* Oferta */
+
+
+
+
+.containerOferta {
+    margin-top: 1400px;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    margin-bottom: 60px;
+}
+.ofertasTitle {
+    font-family: 'Moul';
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 126px;
+    text-align: center;
+    color: #FF6900;
+}
+.ofertaTitle{
+    font-size: 1em;
+    padding-top: 20px;
+}
+.ofertaTitle span{
+    font-size: 2em;
+    font-weight: 1000;
+}
+
+.ofertas {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none;
+    padding: 0;
+}
+
+.oferta {
+    width: 400px; /* Largura da caixa */
+    margin: 10px; /* Espaçamento entre as caixas */
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: #FF6900; /* Cor de fundo */
+    padding: 60px; /* Espaçamento interno */
+    border-radius: 8px; /* Arredonda as bordas */
+    display: flex; /* Torna o conteúdo flexível */
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: space-between; /* Espaço entre os itens */
+}
+
+.oferta img {
+    width: 80px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.oferta h6 {
+    margin: 0; /* Remover margens padrão */
+    color: #FFFFFF; /* Cor do texto */
+}
+
+
+.footer {
+    background-color: #004E9A; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    padding: 60px; /* Preenchimento interno */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 968px) {
+
+    /* Menu */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #004E9A;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 30%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-btn {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /* contato */
+
+    .header-info {
+        display: flex;
+        justify-content: flex-start; /* Alinhar os elementos no canto esquerdo */
+        align-items: center;
+        width: 100%;
+        height: 36px;
+        background: #FF6900;
+    }
+    .email,
+    .phone {
+        font-family: 'KoPub Batang';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+        line-height: 15px;
+        color: #FFFFFF;
+    }
+
+    .redesocial {
+        display: none;
+    }
+
+
+    .logoImg {
+        width: 60px; 
+        height: 50px; 
+    }
+    
+    .logo {
+        position: absolute;
+        font-size: 1.6em;
+        font-weight: 900;
+        margin-left: 50px;
+        margin-top: 26px;
+        color: #FF6900; 
+    }
+
+
+    
+/* Main */
+
+
+
+.main img{
+    width: 100%;
+    height: 25vh;
+}
+
+.main h3{
+    font-family: 'Righteous';
+    font-weight: 1000;
+    font-size: 1.8em;
+    text-align: center;
+
+   
+}
+
+
+/* Sobre */
+.containerSobre {
+    display: flex;
+    margin-bottom: 90px;
+    width: 60px;
+}
+
+
+.contentSobre{
+    position: absolute;
+    margin-top: 260px;
+    background-color: #004E9A ;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    padding: 20px 30px;
+    /* Rectangle 1 */
+
+
+
+}
+
+.contentSobre h1{
+    font-family: 'Moul';
+    font-weight: 1000;
+    margin-top: -30px;
+    font-size: 4em;
+    text-align: center;
+    line-height: 99px;
+
+    /* CorParaOTexto */
+    color: #FF6900;
+    border-bottom: 1px solid #FF6900;
+}
+.contentSobre h3{
+     padding-top: 30px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.8em;
+    line-height: 35px;
+
+    color: #FFFFFF;
+
+
+}
+
+.sobreImg{
+    display: none;
+}
+
+
+
+
+
+/* Serviços */
+
+
+.services {
+    position: absolute;
+    margin-top: 1810px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.servicesItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    margin: 60px 86px;
+    align-items: center;
+}
+
+
+
+.servicesItems img {
+    width: 50vw;
+}
+
+
+
+
+
+.containerOferta {
+    margin-top: 2880px;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    margin-bottom: 80px;
+}
+
+.ofertas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    margin: 60px 86px;
+    justify-content: center;
+    align-items: center;
+}
+.oferta{
+    margin: 20px 0px;
+}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .services {
+        position: absolute;
+        margin-top: 1690px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .containerSobre{
+        margin-top: 60px;
+    }
+    .main img {
+        width: 100%;
+    }
+    .containerOferta {
+        margin-top: 2590px;
+    }
+    
+    /* Outras alterações específicas para dispositivos móveis conforme necessário */
+}
+
+@media only screen and (max-width: 638px){
+    .contentSobre{
+        height: 100vh;
+        padding: 100px;
+        position: absolute;
+    }
+   
+    .services {
+        margin-top: 1950px;
+    }
+    .oferta{
+        width: 300px;
+    } 
+    .containerOferta{
+
+        margin-top: 2660px;
+    }
+}
+
+
+@media only screen and (max-width: 526px){
+    .contentSobre{
+        height: 800px;
+        padding: 100px;
+        position: absolute;
+        padding: 30px;
+    }
+    .main img{
+        width: 100%;
+    }
+    .services {
+        margin-top: 1610px;
+    }
+     .containerOferta{
+
+        margin-top: 2200px;
+    }
+}
