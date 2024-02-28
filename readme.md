@@ -2,11 +2,13 @@
 
 Bem-vindo ao site da Brasil Express Haul, sua escolha inteligente para um transporte rápido, seguro e confiável em todo o Brasil.
 
-<img src="Img/vizualizationDesktop.png" alt="Brasil Express Haul" width="30%"> <img width="10%" src="Img/vizualizationMobile.png" alt="Brasil Express Haul" width="300">
+<a href="https://brazilexpress.netlify.app/"><img src="Img/vizualizationDesktop.png" alt="Brasil Express Haul" width="40%"></a> <a href="https://brazilexpress.netlify.app/"><img width="15%" src="Img/vizualizationMobile.png" alt="Brasil Express Haul" width="300"></a>
+
+
 
 ## Demo
 
-brazilexpress.netlify.app
+https://brazilexpress.netlify.app/
 
 ## Tecnologias Utilizadas
 
