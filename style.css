@@ -51,17 +51,11 @@ nav {
 }
 
 .logoImg {
-    width: 100px;
-    height: 50px;
+    margin-left: 10%;
+    width: 200px;
 }
 
-.logoText {
-    padding-top: 15px;
-    margin-left: -450px;
-    font-size: 35px;
-    font-weight: 900;
-    color: #FF6900;
-}
+
 
 .menu-hidden {
     list-style-type: none;
@@ -138,6 +132,7 @@ nav {
 }
 
 .services {
+    margin: 3% 0%;
     text-align: center;
 }
 
@@ -160,8 +155,8 @@ nav {
     text-align: center;
 }
 
-.servicesItems img {
-    width: 200px;
+.servicesItem img {
+    width: 100%;
     height: auto;
 }
 
@@ -245,6 +240,10 @@ nav {
     border-radius: 8px;
 }
 
+.containerOferta{
+    margin: 3% 0%;
+}
+
 .oferta img {
     width: 80px;
     height: auto;
@@ -279,7 +278,7 @@ nav ul li {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .menu-btn {
         margin-left: -20px;
         display: block;
@@ -300,13 +299,16 @@ nav ul li {
     nav ul.show {
         display: flex;
     }
-
+    .contact{
+        width: 100%;
+    }
     nav ul li {
         margin: 10px 0;
     }
 
     .redesocial {
-        display: none;
+        display: flex;
+        margin-left: 20%;
     }
     .main h3{
         font-size: 1.8em;
@@ -330,9 +332,12 @@ nav ul li {
     }
     .email,
     .phone {
-        font-size: 0.7em;
+        padding: 0px 20px;
+        font-size: 1em;
     }
-
+    .emailIcon{
+        padding-left: 30px;
+    }
     .photoFactory{
         width:100%;
     }
@@ -352,11 +357,26 @@ nav ul li {
     }
     .servicesItem img{
         padding: 15px 0px;
-        margin: 0px 25%;
-        width: 50%;
+        width: 100%;
     }
 
     .servicesTitle{
         font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .contact{
+        font-size: 0.8em;
+    }
+    .email,
+    .phone {
+        padding: 0px 10px;
+    }
+    .emailIcon{
+        padding-left: 20px;
+    }
+    .redesocial{
+        display: none;
     }
 }
